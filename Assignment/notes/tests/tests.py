@@ -7,10 +7,10 @@ import requests
 
 class TestViewSets(TestCase):
     def setUp(self):
+        super().setUp()
         self.client = Client()
         self._url = "http://127.0.0.1:8000/"
         self.token = ""
-        return super().setUp()
 
     def test_register_POST(self):
         register = self._url + "register"
