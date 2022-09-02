@@ -1,0 +1,17 @@
+# python compiled files
+*.pyc
+*.pyo
+
+.env
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+staticfiles
+.DS_Store
+
+.idea/*
+
+/maintenance_scripts/
