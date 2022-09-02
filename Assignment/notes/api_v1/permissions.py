@@ -2,6 +2,11 @@ from rest_framework import permissions
 
 
 class SuperUserReadOnly(permissions.BasePermission):
+    """
+    SuperUserReadOnly : This Class is permission class which does
+                        not allow to Super user to archive its notes,
+                        any other user can archive but superuser cannot
+    """
 
     edit_methods = ("GET", "POST", "PUT", "PATCH")
 
